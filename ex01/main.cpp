@@ -6,7 +6,7 @@
 /*   By: diana <diana@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 18:06:30 by diana             #+#    #+#             */
-/*   Updated: 2025/10/23 10:32:01 by diana            ###   ########.fr       */
+/*   Updated: 2025/10/23 13:23:06 by diana            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int main()
 {
-	Zombie* b = zombieHorde(20, "Diana");
+	Zombie* b = zombieHorde(20, "Maxime");
 	for(int i = 0; i < 20; i++)
 	{
 		b[i].announce();
