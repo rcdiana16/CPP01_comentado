@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: diana <diana@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 13:31:17 by diana             #+#    #+#             */
-/*   Updated: 2025/10/23 10:04:09 by diana            ###   ########.fr       */
+/*   Created: 2025/10/22 18:06:30 by diana             #+#    #+#             */
+/*   Updated: 2025/10/23 10:32:01 by diana            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,10 @@
 
 int main()
 {
-	Zombie z1("Foo");
-	z1.announce();
-
-	Zombie* z2 = newZombie("Alice"); //HEAP
-	z2->announce();
-	delete z2;
-	
-	randomChump("Bob"); //STACK
+	Zombie* b = zombieHorde(20, "Diana");
+	for(int i = 0; i < 20; i++)
+	{
+		b[i].announce();
+	}
+	delete[] b;
 }

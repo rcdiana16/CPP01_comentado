@@ -6,7 +6,7 @@
 /*   By: diana <diana@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/22 13:31:37 by diana             #+#    #+#             */
-/*   Updated: 2025/10/22 17:31:56 by diana            ###   ########.fr       */
+/*   Updated: 2025/10/22 18:15:21 by diana            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,5 @@ Zombie* newZombie(std::string name)
 //útil para zombies que necesitas mantener más tiempo.
 
 //ver explicacion general en randomchump
+
+//

@@ -1,25 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: diana <diana@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 13:31:17 by diana             #+#    #+#             */
-/*   Updated: 2025/10/23 10:04:09 by diana            ###   ########.fr       */
+/*   Created: 2025/10/22 18:06:43 by diana             #+#    #+#             */
+/*   Updated: 2025/10/23 10:29:32 by diana            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-int main()
+Zombie* zombieHorde(int N, std::string name )
 {
-	Zombie z1("Foo");
-	z1.announce();
-
-	Zombie* z2 = newZombie("Alice"); //HEAP
-	z2->announce();
-	delete z2;
-	
-	randomChump("Bob"); //STACK
+	Zombie* a = new Zombie[N]; //crea N zombies en el heap
+	for(int i = 0; i < N; i++) //recorro los N zombies
+	{
+		a[i].setName(name); //asigna el nombre pasado como parametro
+	}
+	return (a); // retorna el puntero al primer zombie
 }

@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: diana <diana@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 13:31:17 by diana             #+#    #+#             */
-/*   Updated: 2025/10/23 10:04:09 by diana            ###   ########.fr       */
+/*   Created: 2025/10/22 18:06:33 by diana             #+#    #+#             */
+/*   Updated: 2025/10/23 10:29:39 by diana            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-int main()
-{
-	Zombie z1("Foo");
-	z1.announce();
+Zombie::Zombie(){}
+Zombie::~Zombie(){}
 
-	Zombie* z2 = newZombie("Alice"); //HEAP
-	z2->announce();
-	delete z2;
-	
-	randomChump("Bob"); //STACK
+//mi metodo pertenece a la clase zombie, por eso le tengo que añadir la palabra 
+void Zombie::setName(std::string name)
+{
+	this->_name = name;
+}
+
+void Zombie::announce(void)
+{
+	std::cout << _name << ": BraiiiiiiinnnzzzZ..." <<std::endl; 
 }

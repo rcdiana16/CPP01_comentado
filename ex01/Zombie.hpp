@@ -1,25 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: diana <diana@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 13:31:17 by diana             #+#    #+#             */
-/*   Updated: 2025/10/23 10:04:09 by diana            ###   ########.fr       */
+/*   Created: 2025/10/22 18:06:40 by diana             #+#    #+#             */
+/*   Updated: 2025/10/23 10:30:22 by diana            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef ZOMBIE_HPP
+#define ZOMBIE_HPP
 
-int main()
+#include <string>
+#include <iostream>
+
+class Zombie
 {
-	Zombie z1("Foo");
-	z1.announce();
-
-	Zombie* z2 = newZombie("Alice"); //HEAP
-	z2->announce();
-	delete z2;
+	public:
+	Zombie();
+	~Zombie();
+	void setName(std::string name);
+	void announce();
 	
-	randomChump("Bob"); //STACK
-}
+	private:
+	//este es un atributo
+	std::string _name;
+
+};
+
+Zombie* zombieHorde( int N, std::string name);
+
+#endif
