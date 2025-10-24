@@ -1,36 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   HumanB.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: diana <diana@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/22 18:06:40 by diana             #+#    #+#             */
-/*   Updated: 2025/10/24 14:04:45 by diana            ###   ########.fr       */
+/*   Created: 2025/10/23 16:10:20 by diana             #+#    #+#             */
+/*   Updated: 2025/10/24 16:49:52 by diana            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-#define ZOMBIE_HPP
+#ifndef HUMANB_HPP
+#define HUMANB_HPP
 
 #include <string>
 #include <iostream>
+#include "Weapon.hpp"
+#include "HumanA.hpp"
 
-class Zombie
+class HumanB
 {
 	public:
-	Zombie();
-	~Zombie();
-	void setName(std::string name);
-	void announce();
-	
-	private:
-	//este es un atributo
-	std::string _name;
+	HumanB(const std::string& name);
+	~HumanB();
+	void setWeapon(Weapon& weapon);
+	void attack() const;
 
+	private:
+	std::string _name;
+	//como no tenemos arma al principio aqui haremos un puntero a weapon
+	Weapon* _weapon;
 };
-//esta es una funcion externa de la clase, comienza con el nombre de la clase porque 
-//devuelve y trabaja con objetos tipos zombie
-Zombie* zombieHorde( int N, std::string name);
 
 #endif
