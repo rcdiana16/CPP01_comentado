@@ -6,7 +6,7 @@
 /*   By: diana <diana@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 16:10:23 by diana             #+#    #+#             */
-/*   Updated: 2025/10/24 17:03:03 by diana            ###   ########.fr       */
+/*   Updated: 2025/10/24 17:42:32 by diana            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ int main ()
 		club.setType("some other type of club");
 		bob.attack();
 	}
-	
 	{
 		Weapon club = Weapon("crude spiked club");
 

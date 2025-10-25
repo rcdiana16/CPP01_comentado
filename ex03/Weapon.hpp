@@ -6,7 +6,7 @@
 /*   By: diana <diana@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 16:10:35 by diana             #+#    #+#             */
-/*   Updated: 2025/10/24 14:18:02 by diana            ###   ########.fr       */
+/*   Updated: 2025/10/24 17:39:35 by diana            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 class Weapon
 {
 	public:
-	Weapon(const std::string& type);//un constructor que reciba el tipo
+	Weapon(const std::string& type);//un constructor que reciba el atributo type
 	~Weapon();
 	const std::string& getType() const;//getter que devuleve el valor del atributo sin modificarlo ver abajo
 	void setType(const std::string& newType);//setter permite cambiar el valor del atributo
