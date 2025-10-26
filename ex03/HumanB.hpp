@@ -6,7 +6,7 @@
 /*   By: diana <diana@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/23 16:10:20 by diana             #+#    #+#             */
-/*   Updated: 2025/10/24 16:49:52 by diana            ###   ########.fr       */
+/*   Updated: 2025/10/26 09:36:57 by diana            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 #include <string>
 #include <iostream>
 #include "Weapon.hpp"
-#include "HumanA.hpp"
 
 class HumanB
 {
